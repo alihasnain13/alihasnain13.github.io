@@ -1,0 +1,16 @@
+body {
+    background-color: #151723;
+    margin: 0;
+    padding: 20px 30px 30px 30px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1 {
+    color: oldlace;
+    margin: 0;
+  }
+  
+  p {
+    color: oldlace;
+    font-weight: 300;
+  }

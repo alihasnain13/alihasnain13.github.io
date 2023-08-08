@@ -1,63 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#recent-experience">Recent Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-        </ul>
-    </nav>
-
-    <!-- Introduction -->
-    <div class="hello-container">
-        <h1>Hello!</h1>
-    </div>
-    <p class="intro">Welcome to my portfolio.</p>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2 class="section-heading">Education</h2>
-        <!-- Content for education goes here -->
-    </section>
-
-    <!-- Recent Experience Section -->
-    <section id="recent-experience">
-        <h2 class="section-heading">Recent Experience</h2>
-        <!-- Content for recent experience goes here -->
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="section-heading">Projects</h2>
-        <!-- Content for projects goes here -->
-    </section>
-
-    <!-- Contact Me Section -->
-    <section id="contact-me">
-        <h2 class="section-heading">Contact Me</h2>
-        <!-- Content for contact details goes here -->
-    </section>
-
-    <!-- Buttons -->
-    <a href="#" class="resume-btn tilt">Download Resume</a>
-    <a href="https://www.linkedin.com/" class="linkedin-btn tilt" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-
-    <!-- Vanilla Tilt Initialization -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tilt.js here -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script>
-        VanillaTilt.init(document.querySelectorAll(".tilt"), {
-            max: 25,
-            speed: 400
+      $(document).ready(function () {
+        $(".logo-container").tilt({
+          maxTilt: 10,
+          scale: 1.1,
         });
+      });
     </script>
-</body>
+    <!-- Inter font -->
+    <title>Ali Hasnain | Home</title>
+  </head>
+  <body>
+    <!-- Initialize Tilt Effect -->
+    <script>
+      $(".logo-container").tilt({
+        maxTilt: 10, // Maximum tilt angle (optional)
+        scale: 1.1, // Scale the element when being tilted (optional)
+      });
+    </script>
+
+    <div class="nav-container">
+      <nav>
+        <!-- Left-aligned links -->
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#blog">Blog</a>
+          <a href="#photography">Photography</a>
+          <a href="https://github.com/alihasnain13" target="_blank">Github</a>
+        </div>
+        <!-- Right-aligned personal information -->
+        <div class="nav-personal">
+          <span class="name">Ali Hasnain</span>
+          <!-- Bold name -->
+          <span class="info">Computer Science @ Yale</span>
+          <!-- Info text -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="intro-container">
+      <div class="intro-text">
+        <h1>About me</h1>
+        <p>
+          Hey, I'm Ali! I'm a junior at Yale University, pursuing a double major
+          in Computer Science and Environmental Studies. Welcome to my personal
+          website! I'm a software developer, and intend to use this space to
+          show off some of my experiences, projects, and any other interesting
+          things that I come across. I'm very fond of writing, and will probably
+          be writing a few articles on my topics of interest, which may or may
+          not be related to the world of tech! I'm also an amateur photographer,
+          and will likely post a few photos I've taken over the years!
+        </p>
+        <br />
+        <p>
+          But before you check all that stuff out, here's a few more things
+          about me.
+        </p>
+      </div>
+      <!-- Empty div for your image, you can replace it with an img tag -->
+      <div class="intro-image"></div>
+    </div>
+
+    <!-- Main Webpage Content Section -->
+    <div class="content-container">
+      <!-- Education Section -->
+
+      <div class="section">
+        <h2 class="section-heading">
+          <span class="line"></span>Education<span class="line"></span>
+        </h2>
+        <!-- Education Details Container -->
+        <div class="education-details">
+          <!-- Logo Container -->
+          <div class="logo-container" data-tilt data-tilt-reverse="true">
+            <img
+              src="./assets/logos/yale-logo.png"
+              alt="Yale University Logo"
+            />
+          </div>
+          <!-- Education Text -->
+          <div class="education-text">
+            <p><strong>Sept 2021 to June 2025</strong></p>
+            <p><strong>Bachelor of Science</strong> - Computer Science</p>
+            <p><strong>Bachelor of Arts</strong> - Environmental Studies</p>
+            <p>
+              At Yale, I'm involved with the Student Technology Collaborative,
+              the Yale Computer Science Society, CodeHaven, the
+              Environmentalists of Color Collective, Doctors without Borders,
+              and Yalies for Pakistan!
+            </p>
+            <p>
+              Some of my relevant coursework includes Data Structures,
+              Algorithms, Introduction to Systems Programming, Full-Stack Web
+              Development, Intelligent Robotics, The Physical Science of Climate
+              Change, and Renewable Energy!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience Section -->
+      <div class="section">
+        <h2 class="section-heading">
+          <span class="line"></span>Work Experience<span class="line"></span>
+        </h2>
+        <div class="work-experience-details">
+          <!-- Logo Container -->
+          <div class="logo-container" data-tilt data-tilt-reverse="true">
+            <img src="./assets/logos/onebyte-logo.png" alt="OneByte Logo" />
+          </div>
+          <div class="logo-container" data-tilt data-tilt-reverse="true">
+            <img src="./assets/logos/stc-logo.png" alt="STC Logo" />
+          </div>
+          <!-- Add more logos as needed -->
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="section">
+        <h2 class="section-heading">
+          <span class="line"></span>Projects<span class="line"></span>
+        </h2>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="section">
+        <h2 class="section-heading">
+          <span class="line"></span>Skills<span class="line"></span>
+        </h2>
+      </div>
+
+      <!-- Contact Me Section -->
+      <div class="section">
+        <h2 class="section-heading">
+          <span class="line"></span>Contact me<span class="line"></span>
+        </h2>
+      </div>
+    </div>
+  </body>
 </html>

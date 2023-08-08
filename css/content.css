@@ -1,0 +1,89 @@
+/* Introduction Container */
+.intro-container {
+  width: 75%;
+  margin: 4% auto; /* Centers the container horizontally on the page */
+  background-color: #151723;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Introduction Text Styling */
+.intro-text {
+  width: 50%;
+  font-size: large;
+}
+
+/* Common Styling for Sections (Education, Work Experience, Projects, Skills, Contact me) */
+.section {
+  width: 75%;
+  margin: 4% auto; /* Centers the section horizontally on the page */
+  padding: 20px;
+  background-color: #151723;
+}
+
+/* Section Heading Container Styling */
+.section-heading {
+  text-align: center; /* Centers the content */
+  color: oldlace;
+  position: relative;
+  display: flex; /* Allows horizontal alignment */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+}
+
+.line {
+    flex-grow: 0; /* Prevents the line from growing, keeping it at a fixed length */
+    width: 35px; /* Adjusts the length of the line */
+    height: 2px; /* Adjusts the thickness of the line */
+    background-color: oldlace; /* You can change this color to match your design */
+    margin: 0 12px; /* Adjusts the spacing between the line and the text */
+  }
+
+/* Section Heading Text Styling */
+.section-heading h2 {
+  font-weight: bold; /* Makes the headings bold */
+  font-size: 48px; /* Makes the headings larger */
+  margin: 0; /* Removes default margin */
+}
+
+/* Container for Education Details */
+.work-experience-details,
+.education-details {
+  margin-top: 1%;
+  display: flex;
+  align-items: flex-start; /* Aligns children at the top */
+  justify-content: flex-start; /* Aligns children to the left */
+  gap: 20px; /* Space between the logo and text */
+}
+
+.date-right {
+  text-align: right;
+  display: block;
+}
+
+/* Logo Container */
+.logo-container {
+  margin-right: 1%;
+  width: auto; /* Auto width to keep the aspect ratio */
+  height: 100%; /* Adjust as needed to match the text block */
+}
+
+/* Logo Image */
+.logo-container img {
+  width: 300px; /* Adjust to the desired width */
+  height: auto; /* Keeps the aspect ratio */
+  display: block; /* Ensures the image takes the full size */
+}
+
+/* Education Text Container */
+.education-text {
+  margin-top: 2%;
+  flex-grow: 1; /* Allows the text container to take up remaining space */
+  font-size: 16px; /* Adjust as needed */
+}
+
+/* Bold Text for Degrees */
+.education-text strong {
+  font-weight: bold; /* Makes the text bold */
+}
