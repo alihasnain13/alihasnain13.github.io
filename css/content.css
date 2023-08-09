@@ -124,3 +124,31 @@
   font-weight: 300;
   font-size: 18px;
 }
+
+
+/* Parent Container that holds the individual project containers */
+.project-row {
+  margin-top: 4%;
+  width: 100%; /* Full width to accommodate containers */
+  display: flex; /* Enables flex layout */
+  justify-content: space-between; /* Equal space between containers */
+  flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+/* Individual Project Containers */
+.project-container {
+  border: 1px solid rgba(253, 245, 230, 0.5); /* oldlace at 70% opacity */
+  border-radius: 12px; /* Rounded rectangle */
+  width: calc(48% - 12px); /* 50% width minus 10px to allow some space between containers */
+  height: 500px; /* Specific height to make containers boxy */
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 10px 10px 10px 10px; /* Margin to give space around containers */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+
+

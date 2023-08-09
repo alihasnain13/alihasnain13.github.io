@@ -20,6 +20,16 @@
         });
       });
     </script>
+    <script>
+      $(document).ready(function () {
+        $(".project-container").tilt({
+          maxTilt: 9, // Decrease the tilt intensity
+          glare: true, // Enable the glare effect
+          maxGlare: 0.1, // Adjust the glare intensity
+        });
+      });
+    </script>
+
     <!-- Inter font -->
     <title>Ali Hasnain | Home</title>
   </head>
@@ -85,7 +95,6 @@
           But before you check all that stuff out, here's a few more things
           about me.
         </p>
-
       </div>
       <!-- Empty div for your image, you can replace it with an img tag -->
       <div class="intro-image"></div>
@@ -110,7 +119,9 @@
           </div>
           <!-- Education Text -->
           <div class="education-text">
-            <p style="text-align: right;"><strong><i>September 2021 to June 2025</i></strong></p>
+            <p style="text-align: right">
+              <strong><i>September 2021 to June 2025</i></strong>
+            </p>
             <p><strong>Bachelor of Science</strong> - Computer Science</p>
             <p><strong>Bachelor of Arts</strong> - Environmental Studies</p>
             <p>
@@ -143,21 +154,28 @@
             data-tilt
             data-tilt-reverse="true"
           >
-          <a href="https://www.linkedin.com/company/grey-matter-global/"  target="_blank">
-            <div class="logo-container">
-              <img
-                src="./assets/logos/greymatter-logo-white-noBG.png"
-                onmouseover="hover(this, './assets/logos/greymatter-logo-teal-noBG.png')"
-                onmouseout="unhover(this, './assets/logos/greymatter-logo-white-noBG.png')"
-                alt="GreyMatter Logo"
-              />
-            </div>
-          </a>
+            <a
+              href="https://www.linkedin.com/company/grey-matter-global/"
+              target="_blank"
+            >
+              <div class="logo-container">
+                <img
+                  src="./assets/logos/greymatter-logo-white-noBG.png"
+                  onmouseover="hover(this, './assets/logos/greymatter-logo-teal-noBG.png')"
+                  onmouseout="unhover(this, './assets/logos/greymatter-logo-white-noBG.png')"
+                  alt="GreyMatter Logo"
+                />
+              </div>
+            </a>
 
             <!-- Work Experience Text -->
             <div class="work-experience-text">
-              <p style="text-align: right;"><strong><i>Aug 2023 to Present</i></strong></p>
-              <p><strong>Project Manager & Lead Developer</strong></p>
+              <p style="text-align: right">
+                <strong><i>Aug 2023 to Present</i></strong>
+              </p>
+              <p>
+                <strong>Project Manager & Lead Developer @ GreyMatter</strong>
+              </p>
               <p>
                 At Yale, I'm involved with the Student Technology Collaborative,
                 the Yale Computer Science Society, CodeHaven, the
@@ -175,20 +193,22 @@
         </div>
 
         <div class="work-experience-details" data-tilt data-tilt-reverse="true">
-          <a href="https://onebytellc.com/"  target="_blank">
-          <div class="logo-container">
-            <img
-              src="./assets/logos/onebyte-logo-white-noBG.png"
-              onmouseover="hover(this, './assets/logos/onebyte-logo-violet-noBG.png')"
-              onmouseout="unhover(this, './assets/logos/onebyte-logo-white-noBG.png')"
-              alt="OneByte Logo"
-            />
-          </div>
+          <a href="https://onebytellc.com/" target="_blank">
+            <div class="logo-container">
+              <img
+                src="./assets/logos/onebyte-logo-white-noBG.png"
+                onmouseover="hover(this, './assets/logos/onebyte-logo-violet-noBG.png')"
+                onmouseout="unhover(this, './assets/logos/onebyte-logo-white-noBG.png')"
+                alt="OneByte Logo"
+              />
+            </div>
           </a>
           <!-- Work Experience Text -->
           <div class="work-experience-text">
-            <p style="text-align: right;"><strong><i>June 2023 to Present</i></strong></p>
-            <p><strong>Software Engineer Intern</strong></p>
+            <p style="text-align: right">
+              <strong><i>June 2023 to Present</i></strong>
+            </p>
+            <p><strong>Software Engineer Intern @ OneByte</strong></p>
             <p>
               At Yale, I'm involved with the Student Technology Collaborative,
               the Yale Computer Science Society, CodeHaven, the
@@ -205,20 +225,22 @@
         </div>
 
         <div class="work-experience-details" data-tilt data-tilt-reverse="true">
-          <a href="https://www.instagram.com/yalestc/"  target="_blank">
-          <div class="logo-container">
-            <img
-              src="./assets/logos/stc-logo-white-noBG.png"
-              onmouseover="hover(this, './assets/logos/stc-logo-red-noBG.png')"
-              onmouseout="unhover(this, './assets/logos/stc-logo-white-noBG.png')"
-              alt="OneByte Logo"
-            />
+          <a href="https://www.instagram.com/yalestc/" target="_blank">
+            <div class="logo-container">
+              <img
+                src="./assets/logos/stc-logo-white-noBG.png"
+                onmouseover="hover(this, './assets/logos/stc-logo-red-noBG.png')"
+                onmouseout="unhover(this, './assets/logos/stc-logo-white-noBG.png')"
+                alt="OneByte Logo"
+              />
             </div>
           </a>
           <!-- Work Experience Text -->
           <div class="work-experience-text">
-            <p style="text-align: right;"><strong><i>October 2021 to Present</i></strong></p>
-            <p><strong>Student Technician Coordinator</strong></p>
+            <p style="text-align: right">
+              <strong><i>October 2021 to Present</i></strong>
+            </p>
+            <p><strong>Student Technician Coordinator @ STC</strong></p>
             <p>
               At Yale, I'm involved with the Student Technology Collaborative,
               the Yale Computer Science Society, CodeHaven, the
@@ -233,12 +255,30 @@
             </p>
           </div>
         </div>
+      </div>
 
       <!-- Projects Section -->
       <div class="section">
         <h2 class="section-heading">
           <span class="line"></span>Projects<span class="line"></span>
         </h2>
+        <div class="project-row">
+          <div class="project-container" data-tilt data-tilt-reverse="true">
+            <!-- Project Details -->
+          </div>
+          <div class="project-container" data-tilt data-tilt-reverse="true">
+            <!-- Project Details -->
+          </div>
+        </div>
+
+        <div class="project-row">
+          <div class="project-container" data-tilt data-tilt-reverse="true">
+            <!-- Project Details -->
+          </div>
+          <div class="project-container" data-tilt data-tilt-reverse="true">
+            <!-- Project Details -->
+          </div>
+        </div>
       </div>
 
       <!-- Skills Section -->
@@ -246,7 +286,10 @@
         <h2 class="section-heading">
           <span class="line"></span>Skills<span class="line"></span>
         </h2>
-        <h3 class="skills-heading">These are some of the languages, frameworks, tools, and software that I'm familiar with:</h3>
+        <h3 class="skills-heading">
+          Here are some of the languages, frameworks, and tools that I'm
+          familiar with:
+        </h3>
         <!-- Add more content related to skills here -->
       </div>
 
@@ -256,7 +299,6 @@
           <span class="line"></span>Contact me<span class="line"></span>
         </h2>
       </div>
-
     </div>
 
     <!-- JavaScript here -->
