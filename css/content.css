@@ -48,7 +48,6 @@
 }
 
 /* Container for Education Details */
-/* .work-experience-details, */
 .education-details {
   margin-top: 1%;
   display: flex;
@@ -74,6 +73,7 @@
   width: 300px; /* Adjust to the desired width */
   height: auto; /* Keeps the aspect ratio */
   display: block; /* Ensures the image takes the full size */
+  transition: opacity 0.2s; /* Smooth transition */
 }
 
 /* Education Text Container */
@@ -88,30 +88,39 @@
   font-weight: bold; /* Makes the text bold */
 }
 
- /* Work Experience Details Container */
- .work-experience-details {
-    margin-top: 1%;
-    display: flex;
-    flex-direction: column; /* Aligns children vertically */
-    gap: 20px; /* Space between each logo-text pair */
-  }
-  
-  /* Individual Work Experience Entry */
-  .work-experience-entry {
-    display: flex;
-    align-items: flex-start; /* Aligns children at the top */
-    justify-content: flex-start; /* Aligns children to the left */
-  }
+/* Work Experience Container */
+.work-experience-container {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column; /* Aligns each work-experience-details block vertically */
+  gap: 20px; /* Space between each logo-text pair */
+}
 
+/* Work Experience Details */
+.work-experience-details {
+  margin-bottom: 3%;
+  display: flex; /* Aligns logo and text horizontally */
+  align-items: flex-start; /* Aligns children at the top */
+  justify-content: flex-start; /* Aligns children to the left */
+  gap: 20px; /* Space between the logo and text */
+}
 
 /* Work Experience Text Container */
 .work-experience-text {
-    margin-top: 2%;
-    flex-grow: 1; /* Allows the text container to take up remaining space */
-    font-size: 16px; /* Adjust as needed */
-  }
-  
-  /* Bold Text for Dates */
-  .work-experience-text strong {
-    font-weight: bold; /* Makes the text bold */
-  }
+  margin-top: 2%;
+  flex-grow: 1; /* Allows the text container to take up remaining space */
+  font-size: 16px; /* Adjust as needed */
+}
+
+/* Bold Text for Dates */
+.work-experience-text strong {
+  font-weight: bold; /* Makes the text bold */
+}
+
+.skills-heading {
+  margin-top: 5%;
+  color: oldlace;
+  text-align: center; /* Center the text */
+  font-weight: 300;
+  font-size: 18px;
+}
