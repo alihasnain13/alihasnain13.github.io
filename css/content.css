@@ -48,7 +48,7 @@
 }
 
 /* Container for Education Details */
-.work-experience-details,
+/* .work-experience-details, */
 .education-details {
   margin-top: 1%;
   display: flex;
@@ -87,3 +87,31 @@
 .education-text strong {
   font-weight: bold; /* Makes the text bold */
 }
+
+ /* Work Experience Details Container */
+ .work-experience-details {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column; /* Aligns children vertically */
+    gap: 20px; /* Space between each logo-text pair */
+  }
+  
+  /* Individual Work Experience Entry */
+  .work-experience-entry {
+    display: flex;
+    align-items: flex-start; /* Aligns children at the top */
+    justify-content: flex-start; /* Aligns children to the left */
+  }
+
+
+/* Work Experience Text Container */
+.work-experience-text {
+    margin-top: 2%;
+    flex-grow: 1; /* Allows the text container to take up remaining space */
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  /* Bold Text for Dates */
+  .work-experience-text strong {
+    font-weight: bold; /* Makes the text bold */
+  }
