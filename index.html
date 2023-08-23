@@ -15,7 +15,7 @@
     <script>
       $(document).ready(function () {
         $(".logo-container").tilt({
-          maxTilt: 10,
+          maxTilt: 7,
           scale: 1.1,
         });
       });
@@ -23,7 +23,7 @@
     <script>
       $(document).ready(function () {
         $(".project-container").tilt({
-          maxTilt: 5, // Decrease the tilt intensity
+          maxTilt: 2, // Decrease the tilt intensity
           glare: true, // Enable the glare effect
           maxGlare: 0.1, // Adjust the glare intensity
           scale: 1.06
@@ -98,7 +98,12 @@
         </p>
       </div>
       <!-- Empty div for your image, you can replace it with an img tag -->
-      <div class="intro-image"></div>
+      <div class="intro-image">
+        <img src="./assets/images/my-photo.png" alt="A photo of me!">
+        <p class="image-caption">
+          Here's a photo of me in Miami!
+        </p>
+      </div>
     </div>
 
     <!-- Main Webpage Content Section -->
@@ -265,33 +270,25 @@
         </h2>
         <div class="project-row">
           <div class="project-container" data-tilt data-tilt-reverse="true">
+            <h3 class="project-title">PsychPilot</h3>
             <!-- Project Details -->
           </div>
           <div class="project-container" data-tilt data-tilt-reverse="true">
+            <h3 class="project-title">Yale Marketplace</h3>
             <!-- Project Details -->
           </div>
         </div>
 
         <div class="project-row">
           <div class="project-container" data-tilt data-tilt-reverse="true">
+            <h3 class="project-title">Yalies on the Wall!</h3>
             <!-- Project Details -->
           </div>
           <div class="project-container" data-tilt data-tilt-reverse="true">
+            <h3 class="project-title">Brainwave</h3>
             <!-- Project Details -->
           </div>
         </div>
-      </div>
-
-      <!-- Skills Section -->
-      <div class="section">
-        <h2 class="section-heading">
-          <span class="line"></span>Skills<span class="line"></span>
-        </h2>
-        <h3 class="skills-heading">
-          Here are some of the languages, frameworks, and tools that I'm
-          familiar with:
-        </h3>
-        <!-- Add more content related to skills here -->
       </div>
 
       <!-- Contact Me Section -->
