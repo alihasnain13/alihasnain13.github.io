@@ -1,18 +1,49 @@
 body {
-    background-color: #151723;
-    margin: 0;
-    padding: 0px 30px 30px 30px;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  h1 {
-    color: oldlace;
-    margin: 0;
-  }
+  background-color: #151723;
+  margin: 0;
+  padding: 0px 30px 30px 30px;
+  font-family: "Inter", sans-serif;
+}
 
-  
-  
-  p {
-    color: oldlace;
-    font-weight: 300;
-  }
+h1 {
+  color: oldlace;
+  margin: 0;
+}
+
+p {
+  color: oldlace;
+  font-weight: 300;
+}
+
+/* Common Styling for Sections (Education, Work Experience, Projects, Skills, Contact me) */
+.section {
+  width: 75%;
+  margin: 4% auto; /* Centers the section horizontally on the page */
+  padding: 20px;
+  background-color: #151723;
+}
+
+/* Section Heading Container Styling */
+.section-heading {
+  text-align: center; /* Centers the content */
+  color: oldlace;
+  position: relative;
+  display: flex; /* Allows horizontal alignment */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+}
+
+.line {
+  flex-grow: 0; /* Prevents the line from growing, keeping it at a fixed length */
+  width: 35px; /* Adjusts the length of the line */
+  height: 2px; /* Adjusts the thickness of the line */
+  background-color: oldlace; /* You can change this color to match your design */
+  margin: 0 12px; /* Adjusts the spacing between the line and the text */
+}
+
+/* Section Heading Text Styling */
+.section-heading h2 {
+  font-weight: bold; /* Makes the headings bold */
+  font-size: 48px; /* Makes the headings larger */
+  margin: 0; /* Removes default margin */
+}
