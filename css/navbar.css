@@ -1,46 +1,50 @@
 .nav-container {
-    width: 100%;
-    margin: 0;
-    background-color: #151723;
-    padding: 0px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: #151723;
-    padding: 10px;
-  }
-  
-  .nav-links {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .nav-links a {
-    color: oldlace;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  
-  .nav-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .nav-personal {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: oldlace;
-  }
-  
-  .name {
-    font-weight: bold;
-  }
-  
-  .info {
-    opacity: 0.7;
-    font-weight: lighter;
-  }
-  
+  width: 100%;
+  margin: 0;
+  background-color: #151723;
+  padding: 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* to ensure it's above other content */
+  background-color: inherit; /* assuming you might have some background, if not, set to a color of your choice */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* This centers items vertically */
+  background-color: #151723;
+  padding: 15px 10px; /* Increased padding-top and padding-bottom to 20px */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  color: oldlace;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-personal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: oldlace;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.info {
+  opacity: 0.7;
+  font-weight: lighter;
+}
