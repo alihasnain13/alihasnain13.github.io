@@ -1,0 +1,28 @@
+/* Work Experience Container */
+.work-experience-container {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column; /* Aligns each work-experience-details block vertically */
+    gap: 20px; /* Space between each logo-text pair */
+  }
+  
+  /* Work Experience Details */
+  .work-experience-details {
+    margin-bottom: 3%;
+    display: flex; /* Aligns logo and text horizontally */
+    align-items: flex-start; /* Aligns children at the top */
+    justify-content: flex-start; /* Aligns children to the left */
+    gap: 20px; /* Space between the logo and text */
+  }
+  
+  /* Work Experience Text Container */
+  .work-experience-text {
+    margin-top: 2%;
+    flex-grow: 1; /* Allows the text container to take up remaining space */
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  /* Bold Text for Dates */
+  .work-experience-text strong {
+    font-weight: bold; /* Makes the text bold */
+  }

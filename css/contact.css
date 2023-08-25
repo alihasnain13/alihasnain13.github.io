@@ -1,0 +1,92 @@
+/* Parent container for contact cards */
+.contact-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4%;
+  }
+  
+  /* Individual Contact Card */
+  .contact-card {
+    width: calc(40% - 40px); 
+    height: 100px; 
+    padding: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #151723;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+    cursor: pointer;
+    color: oldlace;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  
+  .contact-card:hover {
+    background-color: #1e202b;
+    transform: translateY(-5px); /* Gives a slight lift to the card on hover */
+  }
+  
+  .contact-card::after {
+    content: '→';
+    position: absolute;
+    top: 15px;             /* Adjusted to move closer to the top corner */
+    right: 15px;           /* Adjusted to move closer to the right edge */
+    font-size: 16px;       /* Smaller size for the arrow */
+    font-weight: bold;
+    color: oldlace;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: rotate(0deg) translateX(15px);  /* Adjusted to match the new size */
+  }
+  
+  .contact-card:hover::after {
+    opacity: 1;
+    transform: rotate(-45deg) translateX(0);
+  }
+  
+  .contact-icon-container {
+    width: 60px; 
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  
+  .contact-icon-container img {
+    max-width: 100%; 
+    max-height: 100%;
+  }
+  
+  .contact-icon-container img {
+    transition: opacity 0.35s; /* Smooth transition */
+  }
+  
+  .contact-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact-title {
+    font-size: 20px;
+    margin: 0; /* Removes default margins */
+  }
+  
+  .contact-description {
+    font-size: 16px;       
+    font-weight: 400;     
+    opacity: 0.7;         
+    margin-top: 5px;      
+  }
+  

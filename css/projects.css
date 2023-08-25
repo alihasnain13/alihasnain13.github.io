@@ -1,0 +1,85 @@
+/* Parent Container that holds the individual project containers */
+.project-row {
+    margin-top: 4%;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Individual Project Containers */
+  .project-container {
+    border: 1px solid transparent;  /* Updated this line to set a transparent border */
+    border-radius: 12px;
+    width: calc(90% - 40px);
+    height: 150px;
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Updated for vertical alignment */
+    overflow: hidden;
+    position: relative;
+    background-color: #151723;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    color: oldlace;
+    text-decoration: none;
+  }
+  
+  .project-container:hover {
+    background-color: #1e202b;
+  }
+  
+  .project-container:after {
+    content: '→';
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: oldlace;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: rotate(0deg) translateX(20px);
+  }
+  
+  .project-container:hover:after {
+    opacity: 1;
+    transform: rotate(-45deg) translateX(0);
+  }
+  
+  .project-logo-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .project-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 10px 10px;
+    text-align: left;
+  }
+  
+  .project-description {
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .project-logo-container {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .project-logo-container img {
+    transition: opacity 0.35s; /* Smooth transition */
+  }
