@@ -26,3 +26,30 @@
   .work-experience-text strong {
     font-weight: bold; /* Makes the text bold */
   }
+
+  /* Media Queries */
+@media screen and (max-width: 768px) {
+    .work-experience-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-experience-text {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        font-size: medium;
+    }
+
+    .work-experience-text p {
+        margin: 10px 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .work-experience-text {
+        font-size: small;
+    }
+}
