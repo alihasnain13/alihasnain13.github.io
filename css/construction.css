@@ -1,0 +1,70 @@
+/* Styles copied from general.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #151723;
+    color: oldlace;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Additional styling for Under Construction page */
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.large-text {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+    background-color: #151723;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: oldlace;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    p, .large-text {
+        font-size: 1rem;
+    }
+
+    .large-text {
+        margin-top: 20%;
+    }
+
+    .section {
+        padding: 20px;
+    }
+}

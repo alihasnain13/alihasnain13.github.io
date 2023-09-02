@@ -1,92 +1,172 @@
 /* Parent container for contact cards */
 .contact-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 4%;
-  }
-  
-  /* Individual Contact Card */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4%;
+}
+
+/* Individual Contact Card */
+.contact-card {
+  flex: 1; /* Use flex-grow to make the cards evenly distribute the space */
+  max-width: calc(40% - 40px);
+  height: 100px;
+  padding: 15px;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #151723;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  color: oldlace;
+  text-decoration: none;
+  position: relative;
+}
+
+.contact-card:hover {
+  background-color: #1e202b;
+  transform: translateY(-5px);
+}
+
+.contact-card::after {
+  content: '→';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: oldlace;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: rotate(0deg) translateX(15px);
+}
+
+.contact-card:hover::after {
+  opacity: 1;
+  transform: rotate(-45deg) translateX(0);
+}
+
+.contact-icon-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.contact-icon-container img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: opacity 0.35s;
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+}
+
+.contact-text {
+  flex: 1; /* Use flex-grow to allow the text to take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.contact-description {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+/* Media Queries */
+/* Adjusts for tablet sizes */
+@media screen and (max-width: 768px) {
   .contact-card {
-    width: calc(40% - 40px); 
-    height: 100px; 
-    padding: 15px;
-    margin: 20px;
-    box-sizing: border-box;
-    border-radius: 12px;
+    max-width: calc(45% - 20px);
+    margin: 20px 10px;
+    padding: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #151723;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
-    cursor: pointer;
-    color: oldlace;
-    text-decoration: none;
-    position: relative;
+    justify-content: center; /* Center horizontally */
   }
-  
-  
-  .contact-card:hover {
-    background-color: #1e202b;
-    transform: translateY(-5px); /* Gives a slight lift to the card on hover */
-  }
-  
-  .contact-card::after {
-    content: '→';
-    position: absolute;
-    top: 15px;             /* Adjusted to move closer to the top corner */
-    right: 15px;           /* Adjusted to move closer to the right edge */
-    font-size: 16px;       /* Smaller size for the arrow */
-    font-weight: bold;
-    color: oldlace;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: rotate(0deg) translateX(15px);  /* Adjusted to match the new size */
-  }
-  
-  .contact-card:hover::after {
-    opacity: 1;
-    transform: rotate(-45deg) translateX(0);
-  }
-  
+
   .contact-icon-container {
-    width: 60px; 
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
+    width: 50px;
+    height: 50px;
   }
-  
-  .contact-icon-container img {
-    max-width: 100%; 
-    max-height: 100%;
-  }
-  
-  .contact-icon-container img {
-    transition: opacity 0.35s; /* Smooth transition */
-  }
-  
-  .contact-content {
-    display: flex;
-    align-items: center;
-  }
-  
+
   .contact-text {
+    width: calc(100% - 70px);
+    text-align: center; /* Center-align the contents */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
-  
+
   .contact-title {
-    font-size: 20px;
-    margin: 0; /* Removes default margins */
+    font-size: 18px;
+    margin: 5px 0; /* Adjust the vertical margin */
   }
-  
+
   .contact-description {
-    font-size: 16px;       
-    font-weight: 400;     
-    opacity: 0.7;         
-    margin-top: 5px;      
+    font-size: 14px;
+    margin: 0;
   }
-  
+
+  .contact-content {
+    width: 100%;
+    margin: 10px; /* Adjust margin for closer spacing */
+    padding: 5px; /* Adjust padding for closer spacing */
+  }
+}
+
+/* Adjusts for mobile sizes */
+@media screen and (max-width: 480px) {
+  .contact-card {
+    max-width: 90%;
+    margin: 20px 5%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+  }
+
+  .contact-icon-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-text {
+    width: calc(100% - 60px);
+    text-align: center; /* Center-align the contents */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-title {
+    font-size: 16px;
+    margin: 5px 0; /* Adjust the vertical margin */
+  }
+
+  .contact-description {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .contact-content {
+    width: 100%;
+    margin: 10px; /* Adjust margin for closer spacing */
+    padding: 5px; /* Adjust padding for closer spacing */
+  }
+}

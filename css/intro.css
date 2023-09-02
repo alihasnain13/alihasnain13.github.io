@@ -1,7 +1,8 @@
 /* Introduction Container */
 .intro-container {
     width: 75%;
-    margin: 4% auto;
+    margin: 0 auto;
+    margin-top: 10%;
     background-color: #151723;
     display: flex;
     justify-content: space-between;
@@ -25,7 +26,7 @@
     max-width: 100%;
     height: auto;
     margin: auto 0;
-    margin-top: 15%;
+    margin-top: 0;
     margin-left: 25%;
     padding: 10px;
     display: block;
